@@ -11,12 +11,12 @@ Version: 1.0.1
 */
 
 //*read description* I won't repeat myself
-function replace_refund( $text ){
+function replace_refund(){
 	$replace = array(
 		'refund' => '<a style="color:red;" href="https://23.30.218.171/tkrow64/wordpress/refunds/">REFUND</a>'
 	);
 	$text = str_replace( array_keys($replace), $replace, $text);
 	return $text;
 }
-add_filter('the_content', 'replace_refund');
-add_filter('the_excerpt', 'replace_refund');
+add_filter('the_content', 'replace_refund()');
+add_filter('the_excerpt', 'replace_refund()');

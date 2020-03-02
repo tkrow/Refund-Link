@@ -12,8 +12,8 @@ Version: 1.0.1
 
 //*read description* I won't repeat myself
 function replace_refund($text){
-	$text = str_replace('REFUND', '<a href="https://23.30.218.171/tkrow64/wordpress/refund/ </a>', $text);
-	$text = str_replace('refund', '<a href="https://23.30.218.171/tkrow64/wordpress/refund/ </a>', $text);
+	$text = str_replace('REFUND', '<a style="color:red;" href="https://23.30.218.171/tkrow64/wordpress/refund </a>', $text);
+	$text = str_replace('refund', '<a style="color:red;" href="https://23.30.218.171/tkrow64/wordpress/refund </a>', $text);
 	return ($text);
 }
 add_filter('the_content', 'replace_refund');
